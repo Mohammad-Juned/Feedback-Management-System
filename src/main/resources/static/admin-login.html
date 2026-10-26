@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login | Feedback Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="auth-container">
+    <div class="auth-card">
+        <h1>Admin Login</h1>
+        <p class="subtitle">Sign in to manage user feedback.</p>
+
+
+        <form id="adminLoginForm">
+            <div class="form-group">
+                <label for="adminUsername">Username</label>
+                <input
+                        type="text"
+                        id="adminUsername"
+                        placeholder="Enter admin username"
+                        required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="adminPassword">Password</label>
+                <input
+                        type="password"
+                        id="adminPassword"
+                        placeholder="Enter admin password"
+                        required
+                >
+            </div>
+
+            <button type="submit" class="btn">Login as Admin</button>
+
+            <p id="adminLoginMessage" class="message" aria-live="polite"></p>
+        </form>
+
+        <p class="auth-footer">
+            <a href="index.html">Return to User Login</a>
+        </p>
+    </div>
+
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

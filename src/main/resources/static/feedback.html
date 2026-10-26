@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Feedback | Feedback Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="dashboard-header">
+    <div>
+        <h1>Feedback Dashboard</h1>
+        <p>Welcome, <span id="displayUsername">User</span>!</p>
+    </div>
+
+    <button id="logoutButton" class="logout-btn">Logout</button>
+
+
+</header>
+
+<main class="dashboard-container">
+
+
+    <section class="panel" id="feedbackFormPanel">
+        <h2 id="formTitle">Share Your Feedback</h2>
+        <p class="subtitle">Tell us about your experience.</p>
+
+        <form id="feedbackForm">
+            <div class="form-group">
+                <label for="feedbackMessage">Your Feedback</label>
+                <textarea
+                        id="feedbackMessage"
+                        rows="5"
+                        placeholder="Write your feedback here..."
+                        required
+                        maxlength="2000"
+                ></textarea>
+            </div>
+
+            <button type="submit" class="btn" id="feedbackSubmitButton">
+                Submit Feedback
+            </button>
+
+            <button
+                    type="button"
+                    class="secondary-btn"
+                    id="cancelEditButton"
+                    hidden
+            >
+                Cancel Edit
+            </button>
+
+            <p id="feedbackStatus" class="message" aria-live="polite"></p>
+        </form>
+    </section>
+
+    <section class="panel">
+        <h2>My Feedback</h2>
+        <div id="feedbackList">
+            <p>Loading your feedback...</p>
+        </div>
+    </section>
+
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>

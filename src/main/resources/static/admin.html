@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard | Feedback Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="dashboard-header">
+    <div>
+        <h1>Admin Dashboard</h1>
+        <p>Manage all submitted feedback</p>
+    </div>
+
+
+    <button id="adminLogoutButton" class="logout-btn">Logout</button>
+
+
+</header>
+
+<main class="dashboard-container">
+
+
+    <section class="panel">
+        <h2>All Feedback</h2>
+        <p class="subtitle">View, update, and delete feedback submissions.</p>
+
+        <p id="adminStatus" class="message" aria-live="polite"></p>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>User</th>
+                    <th>Email</th>
+                    <th>Feedback</th>
+                    <th>Date</th>
+                    <th>Actions</th>
+                </tr>
+                </thead>
+
+                <tbody id="adminFeedbackTable">
+                <tr>
+                    <td colspan="6">Loading feedback...</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>

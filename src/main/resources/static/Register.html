@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | Feedback Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="auth-container">
+    <div class="auth-card">
+        <h1>Create Account</h1>
+        <p class="subtitle">Register to share your feedback with us.</p>
+
+
+        <form id="registerForm">
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input
+                        type="text"
+                        id="username"
+                        placeholder="Choose a username"
+                        required
+                        minlength="3"
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input
+                        type="email"
+                        id="email"
+                        placeholder="Enter your email"
+                        required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input
+                        type="password"
+                        id="password"
+                        placeholder="Create a password"
+                        required
+                        minlength="5"
+                >
+            </div>
+
+            <button type="submit" class="btn">Create Account</button>
+
+            <p id="registerMessage" class="message" aria-live="polite"></p>
+        </form>
+
+        <p class="auth-footer">
+            Already have an account?
+            <a href="index.html">Login here</a>
+        </p>
+    </div>
+
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
